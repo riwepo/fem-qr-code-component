@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  // colors
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color: hsl(212, 45%, 89%);
+  --grayish-blue-color: hsl(220, 15%, 55%);
+  --dark-blue-color: hsl(218, 24%, 22%);
+
+  // color use
+  --main-background-color: var(--light-gray-color);
+  --card-background-color: var(--white-color);
+
+  // fonts
+  --font-family: "Outfit", sans-serif;
+
+  --heading-font-size: 2.2rem;
+  --heading-font-weight: 700;
+
+  --body-font-size: 1.5rem;
+  --body-font-weight: 400;
+
+  // default font size is 16px
+  // we want 1rem to be 10px for easy calcs
+  // using 62.5% instead of hardcoding 10px
+  // still allows the user to change her browser default
+  font-size: 62.5%;
+}
+
+// here we have a CSS reset
+// all elements will have there properties applied
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+  background-color: var(--main-background-color);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 32rem;
+  height: 50rem;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: var(--card-background-color);
+  text-align: center;
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    margin-bottom: 2.4rem;
+  }
+  &__heading {
+    font-weight: var(--heading-font-weight);
+    font-size: var(--heading-font-size);
+    color: var(--dark-blue-color);
+    margin-bottom: 1.6rem;
+  }
+  &__body {
+    color: var(--grayish-blue-color);
+  }
+}
