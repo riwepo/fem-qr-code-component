@@ -18,7 +18,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot/screenshot.png)
+![screenshot of barcode component](./screenshot/Screenshot.png?raw=true)
 
 ### Links
 
